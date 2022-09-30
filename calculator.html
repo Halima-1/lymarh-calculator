@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator</title>
+</head>
+<body>
+<div class="container">
+    <H2>My first Javascript project </H2>
+    <table>
+        <thead>
+            <input id="output" type="text" value="   ">
+        </thead>
+        <tbody>
+            <tr>
+                <td id="data"><button id="clear" onclick="clear()">C</button></td>
+                <td id="data" ><button id="del" onclick="del()">del</button></td>
+                <td id="data" ><button id="exponential" onclick="exponential()">e<sup>x</sup></button></td>
+                <td id="data" ><button id="multiply" onclick="multiply()">x</button></td>
+
+            </tr>
+        <tr>
+            <td id="data"><button id="seven" onclick="seven()">7</button></td>
+            <td id="data"><button id="eight" onclick="eight()">8</button></td>
+            <td id="data"><button id="nine" onclick="nine()">9</button></td>
+            <td id="data"><button id="minus" onclick="minus()">-</button></td>
+        </tr>
+        <tr>
+            <td id="data"><button id="four" onclick="four()">4</button></td>
+            <td id="data"><button id="five" onclick="five()">5</button></td>
+            <td id="data"><button id="six" onclick="six()">6</button></td>
+            <td id="data"><button id="plus" onclick="plus()">+</button></td>
+        </tr><tr>
+            <td id="data"><button id="one" onclick="one()">1</button></td>
+            <td id="data"><button id="two" onclick="two()">2</button></td>
+            <td id="data"><button id="three" onclick="three()">3</button></td>
+            <td id="data"><button id="divide" onclick="divide()">/</button></td>
+        </tr><tr>
+            <td id="data"><button id="modulus" onclick="modulus()">%</button></td>
+            <td id="data"><button id="zero" onclick="zero()">0</button></td>
+            <td id="data"><button id="zeroo" onclick="zeroo()">00</button></td>
+            <td id="data" ><button id="equal" onclick="result()">=</button></td>
+        </tr>
+        </tbody>
+    </table>
+    <p class="pc">Click <a href="https://wa.me/2348105154901/">here</a> to drop your comment or remark. <br> You can connect with me through my social media handles below</p>
+    <div class="images">
+        <a href="https://www.facebook.com/dahunsi.halimah
+        ">
+            <img src="facebook.png" alt="">
+        </a>
+        <a href="https://www.instagram.com/lymarh_19">
+            <img class="imgg" src="instagram.jpg" alt="">
+        </a>
+        <a href="https://mobile.twitter.com/Ajumoke4">
+            <img src="twitter.jpg" alt="">
+        </a>
+<br>
+    </div> <br>
+<div class="cont">
+    
+    <div class="pp">
+        <p>C</p>
+    </div>  
+    <p>Lymarh 2022</p>
+  
+</div>
+</div>
+
+    <script>
+        document.querySelector("#clear").addEventListener("click", ()=>{
+            document.querySelector("#output").value = " "
+        });
+
+        const del = () =>{
+            const num = document.querySelector("#output").value.slice(0, -1)
+            document.querySelector("#output").value = num
+
+        }
+function one() {
+    let one = document.getElementById('output')
+    one.value += 1
+}
+function two() {
+    let two = document.getElementById('output')
+    two.value += 2
+}
+function three() {
+    let three = document.getElementById('output')
+    three.value += 3
+}
+function four() {
+    let four = document.getElementById('output')
+    four.value += 4
+}
+function five() {
+    let five = document.getElementById('output')
+    five.value += 5
+}
+function six() {
+    let six = document.getElementById('output')
+    six.value += 6
+}
+function seven() {
+    let seven = document.getElementById('output')
+    seven.value += 7
+}
+function eight() {
+    let eight = document.getElementById('output')
+    eight.value += 8
+}
+function nine() {
+    let nine = document.getElementById('output')
+    nine.value += 9
+}
+function minus() {
+    let minus = document.getElementById('output')
+    minus.value += '-'
+}
+function plus() {
+    let plus = document.getElementById('output')
+    plus.value += '+'
+}
+function modulus() {
+    let modulus = document.getElementById('output')
+    modulus.value += '%'
+}
+function zero() {
+    let zero = document.getElementById('output')
+    zero.value += 0
+}
+function multiply() {
+    let multiply = document.getElementById('output')
+    multiply.value += 'x'
+}
+function divide() {
+    let divide = document.getElementById('output')
+    divide.value += '/'
+}
+function exponential() {
+    let exponential = document.getElementById('output')
+    exponential.value += '**'
+}
+function result() {
+    let output = document.getElementById('output')
+    let result = eval  (output.value)
+    output.value += "   = "+ result ;
+}
+
+function zero() {
+    let output = document.getElementById('output')
+    let zero = document.getElementById('output')
+    zero.value += 0
+}
+function zeroo() {
+    let output = document.getElementById('output')
+    let zeroo = document.getElementById('output')
+    zeroo.value += '0' + '0'
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+table{
+    background-color: black;
+}
+table, tr, td{
+    border-collapse: collapse;
+}
+button{
+    border: none;
+    width: 90px;
+    height: 70px;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 3px;
+
+}
+.pp{
+    width: 18px;
+    height: 18Px;
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom : 3px;
+    margin-right: 2px;
+    border-radius: 100%;
+}
+.cont{
+    display: flex;
+    margin-left: 140px;
+    margin-top: 20px;
+
+}
+h2{
+    margin: 30px 0 30px 40px;
+}
+.pp p{
+    margin-top: 1px;
+}
+.pc{
+    margin-top: 20px;
+}
+td :hover{
+background-color: black;
+color: white;
+border: 1px solid blue;
+}
+.images{
+    margin-top: 70px;
+    margin-left: 120px;
+
+}
+a{
+    text-decoration: none;
+}
+#del{
+    background-color: gray;
+}
+#clear{
+    background-color: burlywood;
+}
+#equal{
+    background-color: goldenrod;
+        width: 90px;
+    height: 70px;
+    color: white;
+
+}
+.container{
+    margin:50px  auto;
+    justify-content: center;
+    width: 50%;
+
+}
+input{
+    padding: 30px 0;
+    width: 380px;
+    background-color: rgb(250, 232, 211);
+    
+}
+img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    margin: 0 10px;
+}
+.imgg{
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    margin-bottom: 2px;
+}
+
+
+@media (max-width: 400px) {
+    .container{
+        margin:50px  auto;
+        justify-content: center;
+        width: 80%;
+    
+    }
+    button{
+        width: 70px;
+        height: 70px;
+        font-size: 14px;
+    
+    }
+    input{
+        padding: 20px 0;
+        width: 300px;
+        background-color: bisque;
+    
+}
+#equal{
+    background-color: goldenrod;
+        width: 70px;
+    height: 70px;
+    color: white;
+
+}
