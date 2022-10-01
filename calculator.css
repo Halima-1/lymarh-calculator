@@ -101,6 +101,18 @@ img{
         width: 80%;
     
     }
+    .images{
+        margin-top: 70px;
+        margin-left: 80px;
+    
+    }
+    .cont{
+        display: flex;
+        margin-left: 80px;
+        margin-top: 20px;
+    
+    }
+    
     button{
         width: 70px;
         height: 70px;
