@@ -12,11 +12,11 @@
     <H2>My first Javascript project </H2>
     <table>
         <thead>
-            <input id="output" type="text" value="   ">
+            <input id="output" type="text" value="off">
         </thead>
         <tbody>
             <tr>
-                <td id="data"><button id="clear" onclick="clear()">C</button></td>
+                <td id="data"><button id="clear" onclick="clearing()">C</button></td>
                 <td id="data" ><button id="del" onclick="del()">del</button></td>
                 <td id="data" ><button id="exponential" onclick="exponential()">e<sup>x</sup></button></td>
                 <td id="data" ><button id="multiply" onclick="multiply()">x</button></td>
@@ -41,12 +41,13 @@
         </tr><tr>
             <td id="data"><button id="modulus" onclick="modulus()">%</button></td>
             <td id="data"><button id="zero" onclick="zero()">0</button></td>
-            <td id="data"><button id="zeroo" onclick="zeroo()">00</button></td>
+            <td id="data"><button id="onandoff" onclick="onandoff()">ON/OFF</button></td>
+            <!-- <td id="data"><button id="zeroo" onclick="zeroo()">00</button></td> -->
             <td id="data" ><button id="equal" onclick="result()">=</button></td>
         </tr>
         </tbody>
     </table>
-    <p class="pc">Click <a href="https://wa.me/2348105154901?text=Hi%20Halima.">here</a> to drop your comment or remark. <br> You can connect with me through my social media handles below</p>
+    <!-- <p class="pc">Click <a href="https://wa.me/2348105154901?text=Hi%20Halima.">here</a> to drop your comment or remark. <br> You can connect with me through my social media handles below</p> -->
     <div class="images">
         <a href="https://www.facebook.com/dahunsi.halimah
         ">
@@ -58,6 +59,10 @@
         <a href="https://mobile.twitter.com/Ajumoke4">
             <img src="twitter.jpg" alt="twitter">
         </a>
+        <a href="https://wa.me/2348105154901?text=Hi%20Halima.">
+            <img src="whatsapp.png" alt="whatsapp">
+        </a>
+
 <br>
     </div> <br>
 <div class="cont">
@@ -68,99 +73,7 @@
     <p>Lymarh 2022</p>
   
 </div>
-</div>
-
-    <script>
-        document.querySelector("#clear").addEventListener("click", ()=>{
-            document.querySelector("#output").value = " "
-        });
-
-        const del = () =>{
-            const num = document.querySelector("#output").value.slice(0, -1)
-            document.querySelector("#output").value = num
-
-        }
-function one() {
-    let one = document.getElementById('output')
-    one.value += 1
-}
-function two() {
-    let two = document.getElementById('output')
-    two.value += 2
-}
-function three() {
-    let three = document.getElementById('output')
-    three.value += 3
-}
-function four() {
-    let four = document.getElementById('output')
-    four.value += 4
-}
-function five() {
-    let five = document.getElementById('output')
-    five.value += 5
-}
-function six() {
-    let six = document.getElementById('output')
-    six.value += 6
-}
-function seven() {
-    let seven = document.getElementById('output')
-    seven.value += 7
-}
-function eight() {
-    let eight = document.getElementById('output')
-    eight.value += 8
-}
-function nine() {
-    let nine = document.getElementById('output')
-    nine.value += 9
-}
-function minus() {
-    let minus = document.getElementById('output')
-    minus.value += '-'
-}
-function plus() {
-    let plus = document.getElementById('output')
-    plus.value += '+'
-}
-function modulus() {
-    let modulus = document.getElementById('output')
-    modulus.value += '%'
-}
-function zero() {
-    let zero = document.getElementById('output')
-    zero.value += 0
-}
-function multiply() {
-    let multiply = document.getElementById('output')
-    multiply.value += '*'
-}
-function divide() {
-    let divide = document.getElementById('output')
-    divide.value += '/'
-}
-function exponential() {
-    let exponential = document.getElementById('output')
-    exponential.value += '**'
-}
-function result() {
-    let output = document.getElementById('output')
-    let result = eval  (output.value)
-    output.value += "= "+ result ;
-}
-
-function zero() {
-    let output = document.getElementById('output')
-    let zero = document.getElementById('output')
-    zero.value += 0
-}
-function zeroo() {
-    let output = document.getElementById('output')
-    let zeroo = document.getElementById('output')
-    zeroo.value += '0' + '0'
-}
-
-    </script>
+</div> 
+<script src="script.js"></script>
 </body>
 </html>
